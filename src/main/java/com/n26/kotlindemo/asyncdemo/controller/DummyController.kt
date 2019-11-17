@@ -16,15 +16,6 @@ class DummyController(
 
     private val log = LoggerFactory.getLogger(DummyController::class.java)
 
-    @GetMapping
-    suspend fun getDummy(): DataClass {
-        delay(1000)
-        return DataClass("str", 10)
-    }
-
-    @GetMapping("send")
-    fun makeRequest() = dummyService.makeRequest()
-
     @GetMapping("insert")
     fun insert() = dummyService.insertDataToDataClass()
 }

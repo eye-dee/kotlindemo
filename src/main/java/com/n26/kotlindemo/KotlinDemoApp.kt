@@ -8,5 +8,6 @@ open class KotlindemoApplication {
 }
 
 fun main(args: Array<String>) {
+    System.setProperty("reactor.netty.ioWorkerCount", "100");
     SpringApplication.run(KotlindemoApplication::class.java, *args)
 }

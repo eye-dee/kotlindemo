@@ -14,10 +14,17 @@ class DummyController(
 
     @GetMapping
     fun getDummy(): DataClass {
-        Thread.sleep(1000)
+        cpu(10)
         return DataClass("str", 10)
     }
 
     @GetMapping("send")
     fun makeRequest() = dummyService.makeRequest()
+
+    private fun cpu(milliseconds: Int) {
+        val sleepTime = milliseconds * 1000000L // convert to nanoseconds
+        val startTime = System.nanoTime()
+        while (System.nanoTime() - startTime < sleepTime) {
+        }
+    }
 }

@@ -9,8 +9,7 @@ import reactor.core.publisher.Mono
 
 @Service
 class DataClassRepository(
-    private val databaseClient: DatabaseClient,
-    private val postgresqlConnectionFactory: PostgresqlConnectionFactory
+    private val databaseClient: DatabaseClient
 ) {
 
     private val log = LoggerFactory.getLogger(DataClassRepository::class.java)

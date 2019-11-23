@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-./gradlew clean install
+./gradlew clean build
 
 export JAR="kotlindemo-0.0.1-SNAPSHOT.jar"
 printf "Unpacking $JAR"

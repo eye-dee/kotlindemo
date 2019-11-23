@@ -29,7 +29,7 @@ native-image \
   --allow-incomplete-classpath \
   --report-unsupported-elements-at-runtime \
  -DremoveUnusedAutoconfig=true \
-  -cp $CP com.n26.kotlindemoKotlinDemoApplication
+  -cp $CP com.n26.kotlindemo.KotlindemoApplication
 
 mv kotlindemo ../../..
 

@@ -10,7 +10,7 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeout
 
-fun main() = runBlocking {
+fun main10() = runBlocking {
 
     val job = launch {
         repeat(1000) { i ->

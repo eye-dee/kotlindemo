@@ -23,7 +23,7 @@ fun main3() = runBlocking {
     }
 }
 
-fun main() = runBlocking {
+fun main5() = runBlocking {
     repeat(1000000) {
         launch(Dispatchers.IO) {
             delay(100000)

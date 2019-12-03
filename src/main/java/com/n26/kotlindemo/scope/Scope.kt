@@ -5,7 +5,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
-fun main() = runBlocking {
+fun main1() = runBlocking {
     launch {
         delay(200L)
         println("Task from runBlocking")

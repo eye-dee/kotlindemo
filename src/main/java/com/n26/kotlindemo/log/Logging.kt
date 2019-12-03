@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct
 
 fun log(msg: String) = println("[${Thread.currentThread().name}] $msg")
 
-fun main() = runBlocking {
+fun main1() = runBlocking {
     val a = async {
         log("I'm computing a piece of the answer")
         6

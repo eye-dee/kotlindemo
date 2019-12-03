@@ -16,7 +16,7 @@ suspend fun doSomethingUsefulTwo(): Int {
     return 29
 }
 
-fun main() = runBlocking {
+fun main1() = runBlocking {
     val time = measureTimeMillis {
         val one = doSomethingUsefulOne()
         val two = doSomethingUsefulTwo()
